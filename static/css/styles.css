@@ -1,0 +1,85 @@
+.nanum-gothic-coding-regular {
+  font-family: 'Nanum Gothic Coding', monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Nanum Gothic Coding, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid #676767;
+  margin: 20px;
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  margin: 10px 20px;
+  border: 1px solid #a8a8a8;
+  border-radius: 3px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+th {
+  vertical-align: top;
+  padding: 20px 10px;
+}
+tr {
+  margin: 20px;
+}
+
+.tooltip {
+  border-bottom: 1px dotted #000;
+  cursor: pointer;
+  position: relative;
+}
+
+.tooltip::after {
+  content: attr(data-meaning);
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 5px;
+  display: none;
+  z-index: 10;
+  white-space: nowrap;
+}
+
+.tooltip:hover::after {
+  display: block;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
