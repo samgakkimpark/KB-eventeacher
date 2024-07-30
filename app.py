@@ -1,12 +1,26 @@
-from flask import Flask
+from flask import Flask, jsonify, request, send_from_directory
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static', static_url_path='')
 
+data = {
+    "김하진": "98년생 쿼카",
+    "김하영": "00년생 아기부",
+    "박정은": "00년생 보라돌이"
+}
 
 @app.route('/')
-def hello_world():  # put application's code here
-    return 'Hello World!'
+def index():
+    return send_from_directory(app.static_folder, 'index.html')
 
+@app.route('/api/data', methods=['GET'])
+def get_data():
+    return jsonify(data)
+
+@app.route('/api/data', methods=['POST'])
+def post_data():
+    received_data = request.get_json()
+    print(received_data)
+    return jsonify({"status": "success", "received_data": received_data})
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)

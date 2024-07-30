@@ -24,4 +24,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
   descriptionDiv.innerHTML = highlightWords(description, words);
 
+
+
+    const fetchButton = document.getElementById('fetchButton');
+    const sendButton = document.getElementById('sendButton');
+    const dataDisplay = document.getElementById('dataDisplay');
+
+    fetchButton.addEventListener('click', function() {
+        fetch('http://127.0.0.1:5000/api/data')
+            .then(response => response.json())
+            .then(data => {
+                dataDisplay.innerHTML = JSON.stringify(data, null, 2);
+            })
+            .catch(error => console.error('Error fetching data:', error));
+    });
+
+    sendButton.addEventListener('click', function() {
+        const dataToSend = { username: 'test_user', message: 'Hello, Flask!' };
+
+        fetch('http://127.0.0.1:5000/api/data', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(dataToSend)
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Success:', data);
+        })
+        .catch(error => console.error('Error sending data:', error));
+    });
+
+
 });
