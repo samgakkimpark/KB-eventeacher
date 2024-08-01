@@ -36,6 +36,10 @@ button {
   margin: 20px;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 input {
   padding: 10px;
   width: 100%;
