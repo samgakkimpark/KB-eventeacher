@@ -1,8 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
   const recommendationBtn = document.getElementById('recommendation-btn');
-  const resultLabel = document.getElementById('result');
+  const resultLabel = document.getElementById('result-container');
 
   recommendationBtn.addEventListener('click', () => {
-    resultLabel.innerHTML = `이것은결과창입니다이것은결과창입니다이것은결과창입니다이것은결과창입니다이것은결과창입니다이것은결과창입니다이것은결과창입니다이것은결과창입니다이것은결과창입니다이것은결과창입니다이것은결과창입니다이것은결과창입니다이것은결과창입니다이것은결과창입니다이것은결과창입니다이것은결과창입니다이것은결과창입니다이것은결과창입니다이것은결과창입니다이것은결과창입니다`;
+    resultLabel.innerHTML = `
+        <div id="result">
+          <h2>event</h2><br/>
+          <a href="interpreter.html">Interpreter</a>
+        </div>`
   });
 });

@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const descriptionDiv = document.getElementById('description');
+    const fetchButton = document.getElementById('fetch-btn');
+    const homeButton = document.getElementById('home-btn');
 
     function highlightWords(text, words) {
     let highlightedText = text;
@@ -14,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
         return highlightedText;
     }
 
-    const fetchButton = document.getElementById('fetchButton');
 
     fetchButton.addEventListener('click', function() {
         const dataToSend = { message: 'send data' };
@@ -37,5 +38,9 @@ document.addEventListener('DOMContentLoaded', () => {
         .catch(error => console.error('Error sending data:', error));
     });
 
+
+    homeButton.addEventListener('click', function() {
+      window.location.href = 'index.html';
+    });
 
 });
