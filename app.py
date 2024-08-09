@@ -6,6 +6,8 @@ app = Flask(__name__, static_folder='static', static_url_path='')
 
 dictionary = {}
 events = []
+recommended_events = {}
+
 
 @app.route('/')
 def index():
@@ -23,6 +25,12 @@ def dictionary_data():
             }
     return {"error": "Event not found"}
 
+@app.route('/api/data/recommendation', methods=['POST']) 
+def recommended_events_data():
+    global recommended_events
+    customer_id = request.get_json()
+    return recommended_events[str(customer_id)]
+
 @app.route('/api/data/events', methods=['POST'])
 def events_data():
     global events
@@ -30,7 +38,7 @@ def events_data():
 
 
 def load_datas():
-    global dictionary, events
+    global dictionary, events, recommended_events
 
     script_dir = os.path.dirname(__file__)
 
@@ -42,6 +50,9 @@ def load_datas():
     with open(file_path, 'r') as file:
         events = json.load(file)
 
+    file_path = os.path.join(script_dir, 'data', 'recommended_events_data.json')
+    with open(file_path, 'r') as file:
+        recommended_events = json.load(file)
 
 
 if __name__ == '__main__':

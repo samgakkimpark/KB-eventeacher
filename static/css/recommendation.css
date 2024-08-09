@@ -1,10 +1,30 @@
-table {
-    border: solid 1px rgb(128, 128, 128);
-    border-collapse: collapse;
-    margin: 10px auto;
+p {
+  font-size: small;
+  color: #333333;
+  margin: 5px;
 }
 
-th, td {
-    border: solid 1px rgb(128, 128, 128);
-    padding: 10px;
+#result-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 10px auto;
+}
+
+.event {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  max-width: 350px;
+}
+
+.event img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#event_img {
+  margin: 10px;
 }
