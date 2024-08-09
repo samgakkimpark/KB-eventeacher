@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const titleArea = document.getElementById('title');
+    const periodDiv = document.getElementById('period');
     const imgDiv = document.getElementById('img');
     const descriptionDiv = document.getElementById('description');
     const backButton = document.getElementById('back-btn');
@@ -24,13 +25,15 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('Success:', data);
 
         const eventTitle = data["event"]["event_title"];
-        const description = data["event"]["text"];
+        const eventPeriod = data["event"]["event_period"];
+        const eventDescription = data["event"]["text"];
         const dictionary = data["dictionary"];
         const eventImg = data["event"]["event_img"];
 
         titleArea.innerHTML = eventTitle;
+        periodDiv.innerHTML = eventPeriod;
         imgDiv.innerHTML = insertImgs(eventImg);
-        descriptionDiv.innerHTML = highlightWords(eventTitle, description, dictionary);
+        descriptionDiv.innerHTML = highlightWords(eventTitle, eventDescription, dictionary);
         addTooltipClickEvent();
     })
     .catch(error => console.error('Error sending data:', error));
