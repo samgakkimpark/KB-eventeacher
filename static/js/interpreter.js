@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const titleArea = document.getElementById('title');
     const imgDiv = document.getElementById('img');
     const descriptionDiv = document.getElementById('description');
-    const homeButton = document.getElementById('home-btn');
+    const backButton = document.getElementById('back-btn');
 
 
     const params = new URLSearchParams(window.location.search);
@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         titleArea.innerHTML = eventTitle;
         imgDiv.innerHTML = insertImgs(eventImg);
         descriptionDiv.innerHTML = highlightWords(eventTitle, description, dictionary);
+        addTooltipClickEvent();
     })
     .catch(error => console.error('Error sending data:', error));
 
@@ -54,7 +55,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 highlightedText = highlightedText.replace(
                 regex,
                 `<span class="tooltip" data-meaning="${value}"><b>${key}</b></span>`);
-                addTooltipClickEvent()
             }
         });
 
@@ -73,8 +73,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    homeButton.addEventListener('click', function() {
-      window.location.href = 'index.html';
-    });
+    backButton.addEventListener('click', function () {
+        window.history.back();
+    })
 
 });

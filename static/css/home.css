@@ -30,11 +30,6 @@ tr {
   margin: 20px;
 }
 
-.header {
-  margin: 50px 0 0;
-  font-weight: bold;
-}
-
 .container {
   margin: 30px;
   padding: 0;
@@ -43,22 +38,16 @@ tr {
 #result-container {
   display: flex;
   flex-direction: column;
-  /*flex-direction: row;*/
 }
 .result {
   border: 1px solid rgb(128, 128, 128);
   border-radius: 5px;
   margin: 20px;
   padding: 20px;
-  /*height: 100px;*/
   display: block;
   justify-content: center;
   align-items: center;
   text-align: center;
   width: 600px;
   height: fit-content;
-}
-
-#recommendation-btn:hover {
-  cursor: pointer;
 }

@@ -5,6 +5,7 @@ app = Flask(__name__, static_folder='static', static_url_path='')
 events = [{
     "event_id": 1,
     "event_title": "이벤트제목1",
+    "event_period": "2024.01.01 ~ 2024.08.09",
     "event_img": ["https://oimg1.kbstar.com/img/oevent/2024/m04/04_kbot/event_visual.jpg",
                   "https://oimg1.kbstar.com/img/oevent/2024/m03/18_kbot/event_cont_01.jpg",
                   "https://oimg1.kbstar.com/img/oevent/2024/m03/18_kbot/event_cont_02.jpg",
@@ -25,6 +26,7 @@ events = [{
     {
     "event_id": 2,
     "event_title": "2024년, 더 핫해진 포트폴리오 투자에 용~한 케이봇쌤이 왔드래곤!",
+    "event_period": "2024.01.01 ~ 2024.08.09",
     "event_img": ["https://oimg1.kbstar.com/img/oevent/2024/m04/04_kbot/event_visual.jpg",
                   "https://oimg1.kbstar.com/img/oevent/2024/m03/18_kbot/event_cont_01.jpg",
                   "https://oimg1.kbstar.com/img/oevent/2024/m03/18_kbot/event_cont_02.jpg",
