@@ -5,13 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const descriptionDiv = document.getElementById('description');
     const backButton = document.getElementById('back-btn');
 
-
     const params = new URLSearchParams(window.location.search);
     const eventId = params.get('event_id');
-
-    console.log(eventId);
-
-    const dataToSend = { message: 'send data' };
 
     fetch('http://127.0.0.1:5000/api/data/event', {
         method: 'POST',

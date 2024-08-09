@@ -6,11 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="d7b08a8f-ae6c-4ca2-95e2-c6446ee27d7c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Customer_data_Transformation.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/chatgpt_recommadation_final.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/event_crawling.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/event_easy_word.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/all_events_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/all_events_data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/financial_dictionary.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/financial_dictionary.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/output1.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/output1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/output2.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/output2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/total_output.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/total_output.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/recommendation.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/recommendation.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/interpreter.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/interpreter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/recommendation.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/recommendation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/recommendation.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/recommendation.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,21 +56,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/hayoung/Documents/hayoung/samgakkimpark/KB/data",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.notebooks.jupyter.connections.configuration.JupyterServerConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/hayoung/Documents/hayoung/samgakkimpark/KB/data&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.notebooks.jupyter.connections.configuration.JupyterServerConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/data" />
@@ -102,6 +108,7 @@
       <workItem from="1722932612421" duration="52000" />
       <workItem from="1722932665011" duration="9444000" />
       <workItem from="1723177535205" duration="6111000" />
+      <workItem from="1723207564412" duration="599000" />
     </task>
     <servers />
   </component>
