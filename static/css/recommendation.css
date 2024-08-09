@@ -1,0 +1,10 @@
+table {
+    border: solid 1px rgb(128, 128, 128);
+    border-collapse: collapse;
+    margin: 10px auto;
+}
+
+th, td {
+    border: solid 1px rgb(128, 128, 128);
+    padding: 10px;
+}
