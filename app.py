@@ -48,19 +48,19 @@ def load_datas():
 
     script_dir = os.path.dirname(__file__)
 
-    file_path = os.path.join(script_dir, 'data', 'customer_data.json')
+    file_path = os.path.join(script_dir, 'data/json', 'customer_data.json')
     with open(file_path, 'r') as file:
         customers = json.load(file)
 
-    file_path = os.path.join(script_dir, 'data', 'financial_dictionary.json')
+    file_path = os.path.join(script_dir, 'data/json', 'financial_dictionary.json')
     with open(file_path, 'r') as file:
         dictionary = json.load(file)
 
-    file_path = os.path.join(script_dir, 'data', 'all_events_data.json')
+    file_path = os.path.join(script_dir, 'data/json', 'all_events_data.json')
     with open(file_path, 'r') as file:
         events = json.load(file)
 
-    file_path = os.path.join(script_dir, 'data', 'recommended_events_data.json')
+    file_path = os.path.join(script_dir, 'data/json', 'recommended_events_data.json')
     with open(file_path, 'r') as file:
         recommended_events = json.load(file)
 
