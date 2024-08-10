@@ -1,5 +1,5 @@
 {
-  "624": [
+  "1": [
     {
       "event_id": "259",
       "event_title": "97~04년생 모여라! 개강맞이 강력 추천 이벤트! 아이패드부터 스벅까지?",
@@ -19,7 +19,7 @@
       "event_img": "https://oimg1.kbstar.com/img/oevent/2024/m04/29_exchange/event_visual.jpg"
     }
   ],
-  "155": [
+  "2": [
     {
       "event_id": "413",
       "event_title": "「지금 만나야 힙(Hip)한 적립식 신탁」 경품 이벤트",
@@ -39,7 +39,7 @@
       "event_img": "https://oimg1.kbstar.com/img/oevent/2023/0227_KBmission/event_visual.jpg"
     }
   ],
-  "428": [
+  "3": [
     {
       "event_id": "259",
       "event_title": "97~04년생 모여라! 개강맞이 강력 추천 이벤트! 아이패드부터 스벅까지?",
@@ -59,7 +59,7 @@
       "event_img": "https://oimg1.kbstar.com/img/oevent/2022/0913_musterKB/event_visual.jpg"
     }
   ],
-  "865": [
+  "4": [
     {
       "event_id": "284",
       "event_title": "‘한국씨티은행 신용대출 보유 고객님’만을 위한 WELCOME 이벤트",
@@ -68,9 +68,9 @@
     },
     {
       "event_id": "316",
-      "event_title": "'한국씨티은행 신용대출 보유 고객님’만을 위한 WELCOME 이벤트",
+      "event_title": "‘한국씨티은행 신용대출 보유 고객님’만을 위한 WELCOME 이벤트",
       "event_period": "2022.11.11 ~ 2022.12.31",
-      "event_img": "['https://oimg1.kbstar.com/img/oevent/2022/1107_KBcitizen/event_visual-1201.jpg', 'https://oimg1.kbstar.com/img/oevent/2022/1107_KBcitizen/event_cont_01.jpg', 'https://oimg1.kbstar.com/img/oevent/2022/1107_KBcitizen/event_cont_02-1110.jpg', 'https://oimg1.kbstar.com/img/oevent/2022/1107_KBcitizen/event_cont_03-1108.jpg', 'https://oimg1.kbstar.com/img/oevent/2022/1107_KBcitizen/event_cont_04.jpg', 'https://oimg1.kbstar.com/img/oevent/2022/1107_KBcitizen/event_cont_05.jpg']"
+      "event_img": "https://oimg1.kbstar.com/img/oevent/2022/1107_KBcitizen/event_visual-1201.jpg"
     },
     {
       "event_id": "378",
