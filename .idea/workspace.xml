@@ -5,18 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7b08a8f-ae6c-4ca2-95e2-c6446ee27d7c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/all_events_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/all_events_data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/financial_dictionary.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/financial_dictionary.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/output1.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/output1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/output2.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/output2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/total_output.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/total_output.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/recommendation.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/recommendation.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/recommended_events_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/recommended_events_data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/js/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/interpreter.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/interpreter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/recommendation.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/recommendation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/recommendation.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/recommendation.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
