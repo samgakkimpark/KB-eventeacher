@@ -15,10 +15,13 @@ def index():
 
 @app.route('/api/data/event', methods=['POST'])
 def dictionary_data():
-    global dictionary
+    global dictionary, events
     event_id = request.get_json()
+    print(event_id)
     for event in events:
-        if event["event_id"] == event_id:
+        print(event["event_id"])
+        if event["event_id"] == str(event_id):
+            print(event)
             return {
                 "event": event,
                 "dictionary": dictionary
