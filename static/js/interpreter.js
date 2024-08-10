@@ -28,11 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
       titleArea.innerHTML = eventTitle;
       periodDiv.innerHTML = eventPeriod;
       imgDiv.innerHTML = insertImgs(eventImg);
-      descriptionDiv.innerHTML = highlightWords(
-        eventTitle,
-        eventDescription,
-        dictionary
-      );
+      descriptionDiv.innerHTML = highlightWords(eventDescription, dictionary);
       addTooltipClickEvent();
     })
     .catch((error) => console.error('Error sending data:', error));
@@ -46,8 +42,8 @@ document.addEventListener('DOMContentLoaded', () => {
     return insertedImgs;
   }
 
-  function highlightWords(eventTitle, text, words) {
-    let highlightedText = text;
+  function highlightWords(text, words) {
+    let highlightedText = text.replace(/\n/g, '<br/>');
 
     Object.entries(words).forEach(([key, value]) => {
       console.log(`${key}: ${value}`);
@@ -61,7 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    highlightedText = highlightedText.replace(/\n/g, '<br>');
     return highlightedText;
   }
 
