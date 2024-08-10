@@ -4,6 +4,7 @@ from flask import Flask, jsonify, request, send_from_directory
 
 app = Flask(__name__, static_folder='static', static_url_path='')
 
+customers = {}
 dictionary = {}
 events = []
 recommended_events = {}
@@ -13,15 +14,17 @@ recommended_events = {}
 def index():
     return send_from_directory(app.static_folder, 'index.html')
 
+@app.route('/api/data/customer', methods=['POST']) 
+def customers_data():
+    global customers
+    return customers
+
 @app.route('/api/data/event', methods=['POST'])
 def dictionary_data():
     global dictionary, events
     event_id = request.get_json()
-    print(event_id)
     for event in events:
-        print(event["event_id"])
         if event["event_id"] == str(event_id):
-            print(event)
             return {
                 "event": event,
                 "dictionary": dictionary
@@ -41,9 +44,13 @@ def events_data():
 
 
 def load_datas():
-    global dictionary, events, recommended_events
+    global customers, dictionary, events, recommended_events
 
     script_dir = os.path.dirname(__file__)
+
+    file_path = os.path.join(script_dir, 'data', 'customer_data.json')
+    with open(file_path, 'r') as file:
+        customers = json.load(file)
 
     file_path = os.path.join(script_dir, 'data', 'financial_dictionary.json')
     with open(file_path, 'r') as file:
